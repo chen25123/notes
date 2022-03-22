@@ -1,16 +1,5 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
-
-
-
-
-# 笔记开始
-
+# 开始
+  by: chenxj25123<br />
   我在用的vscode插件
   1. gitlens          // 辅助管理 git
   2. vetur            // 最近打开的文件？？？
@@ -50,19 +39,19 @@ This template should help get you started developing with Vue 3 in Vite. The tem
   
  ## 配置文件相关
 
-    PS: 因为之前都是使用的webpack，加上想针对预览和打包模式做一些其他处理，所以，仿照 webpack 建了一个build的文件夹，来管理不同场景的配置。<br />
+  PS: 因为之前都是使用的webpack，加上想针对预览和打包模式做一些其他处理，所以，仿照 webpack 建了一个build的文件夹，来管理不同场景的配置。<br />
 
-    1. 配置host<br />
-    ``` js
-    // 在vite.config.js中 引入previewConfig，然后赋值给 preview
-    import previewConfig from './build/preview.config.js'
+  1. 配置host<br />
 
-    // https://vitejs.dev/config/
-    export default defineConfig({
-      preview: previewConfig,
-      plugins: [vue()]
-    })
-    ``` 
+  ``` js
+  // 在vite.config.js中 引入previewConfig，然后赋值给 preview
+  import previewConfig from './build/preview.config.js'
+  // https://vitejs.dev/config/
+  export default defineConfig({
+    preview: previewConfig,
+    plugins: [vue()]
+  })
+  ``` 
 
 ## 将项目改造为ts
 
@@ -80,6 +69,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
   3. 与package.json同级目录创建postcss.config.js文件；<br />
   4. 安装配置文件中使用到的插件；<br />
   5. style标签加上 lang="postcss"；<br />
+  PS: postcss 的联想功能特别的稀烂，需要安装 vscode 插件，这里我用的 PostCSS Intellisense；<br />
 
 ## 入口文件
 
@@ -110,9 +100,3 @@ This template should help get you started developing with Vue 3 in Vite. The tem
     plugins: [vue(), vitePluginMd2Vue()]
   });
   ```
-
-## 其他后续 要挪走的一些东西
-
-  1. defineComponent
-  defineComponent 函数 对setup函数进行封装，返回options的对象；最重要的是：在TypeScript下，给予了组件 正确的参数类型推断。
-  

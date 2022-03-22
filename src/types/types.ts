@@ -1,0 +1,3 @@
+interface Animal {
+  name: string
+}

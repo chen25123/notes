@@ -1,0 +1,27 @@
+// ts compilerOptions 配置详解: https://segmentfault.com/a/1190000021749847
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext", // esnext 表示仅仅校验转换 TS 类型，不进行语法编译
+    "strict": true, // 开启严格模式
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true, // 屏蔽类型报错
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"] // @/ 就代表src/目录
+    },
+    // "typeRoots": ["@types", "./src/types"]
+  },
+  // 配置需要校验的文件
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "src/**/*.md"
+  ],
+  // 排除不需要校验的文件
+  "exclude": [
+    "node_modules"
+  ]
+}

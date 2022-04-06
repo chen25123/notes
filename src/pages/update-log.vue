@@ -32,7 +32,7 @@ export default defineComponent({
         {
           title: '2022-04-06： 更新记录',
           list: [
-            '1. 使用vue3.0实现全局面包屑;',
+            '1. 使用composition api实现全局面包屑;',
             '2. js空闲时间回调函数requestIdleCallback的demo。'
           ]
         },

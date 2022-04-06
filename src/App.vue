@@ -2,7 +2,7 @@
   <div class="notes-warpper">
     <section class="header display-flex">
       <div class="title">
-        <div class="title-text"><a href="http://git.gdzhzdxf.cn:22255/chen25123/notes">git传送门</a></div>
+        <div class="title-text"><a href="https://github.com/chen25123/notes">git传送门</a></div>
         <div class="desc-text">PS：本项目作为一个学习vite和vue3.0的项目而搭建，主要用来写笔记。</div>
       </div>
     </section>

@@ -16,6 +16,7 @@
 <script lang="ts">
 
 import { defineComponent } from 'vue'
+import navHook from './nav-hook'
 
 export default defineComponent({
   name: 'NavItem',
@@ -26,6 +27,12 @@ export default defineComponent({
     tierCount: {
       type: Number,
       default: 1
+    }
+  },
+  setup() {
+    const { updateNavLayer } = navHook();
+    return {
+      updateNavLayer
     }
   },
   computed: {
@@ -41,10 +48,12 @@ export default defineComponent({
   methods: {
     navClick(item: any): void {
       if (!!item.routeName) {
+        this.updateNavLayer(item);
         this.$router.push( {name: item.routeName} );
       }
     },
   },
+  
   // setup(props) {
   //   // console.log(props.nav);
   //   let navList = props.nav;

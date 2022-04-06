@@ -15,7 +15,7 @@ const data: NavList = {
       name: 'vite+vue3.0+ts', routeName: '', key: '1',children: [
         { name: '框架', routeName: 'frameworkPage', key: '1.1', children: [
           { name: '路由配置', routeName: 'vueRouterPage', key: '1.1.1' },
-          { name: 'md2html', routeName: 'markdownPage', key: '1.1.1' }
+          { name: 'md2html', routeName: 'markdownPage', key: '1.1.2' }
         ]},
         { name: 'typescript', routeName: '', key: '1.2', children: [
           { name: '配置', routeName: 'tsConfigPage', key: '1.2.1', },

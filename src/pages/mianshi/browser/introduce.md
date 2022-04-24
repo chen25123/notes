@@ -38,7 +38,7 @@
   某些属性： 
   1. 3D效果， 旋转，变形(放大缩小)，transfrom位置便宜，
   2. will-change
-  3.  透明(opacity)
+  3. 透明(opacity)
   4. 滤镜(filters)
 
   dom tree 没有伪元素节点但是渲染树有，渲染树没有不显示的节点

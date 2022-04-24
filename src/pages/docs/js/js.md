@@ -17,4 +17,5 @@
   15. [promise](http://blog.gdzhzdxf.cn:8500/cxj/webserver/es6/promise);<br />
   16. [使用promise实现并发](http://blog.gdzhzdxf.cn:8500/cxj/webserver/es6/promiserace);<br />
   17. [原型链的一些思考](http://blog.gdzhzdxf.cn:8500/cxj/webserver/es6/prototype/test.html);<br />
-  18. [js空闲时间](http://blog.gdzhzdxf.cn:8500/cxj/webserver/es6/requestIdleCallback)
+  18. [js空闲时间](http://blog.gdzhzdxf.cn:8500/cxj/webserver/es6/requestIdleCallback);<br />
+  19. [滚动页面绘制svg线条](http://blog.gdzhzdxf.cn:8500/cxj/webserver/es6/svg)
